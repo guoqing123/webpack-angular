@@ -1,0 +1,26 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guoqing123/webpack-angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guoqing123/webpack-angular/issues"
+  },
+  "homepage": "https://github.com/guoqing123/webpack-angular#readme",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-ui-router": "^0.4.2"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
+}
