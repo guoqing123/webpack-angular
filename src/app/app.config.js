@@ -13,7 +13,7 @@ export default ($stateProvider,$urlRouterProvider,$locationProvider) => {
         controller: appCtrl,
         controllerAs: 'vm'
     });
-    $urlRouterProvider.when('','/homePage');
+    $urlRouterProvider.when('','/homePage/homePageList');
     $urlRouterProvider.otherwise('/');
     $locationProvider.html5Mode('true');
 }

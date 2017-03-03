@@ -1,5 +1,6 @@
 
 'use strict';
+import './app.styl'
 import 'angular';
 import 'angular-ui-router';
 

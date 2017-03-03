@@ -5,6 +5,6 @@
 export default class HomePageListCtrl{
     constructor($http){
         'ngInject';
-        Object.assign(this,{$http})
+        Object.assign(this,{$http});
     }
 }

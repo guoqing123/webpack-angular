@@ -1,0 +1,159 @@
+
+@font-face {
+  font-family: 'MyriadSetPro-Thin';
+  src: url('./common/images/font/MyriadSetPro-Thin/MyriadSetPro-Thin.eot'); /* IE9 Compat Modes */
+  src: url('./common/images/font/MyriadSetPro-Thin/MyriadSetPro-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./common/images/font/MyriadSetPro-Thin/MyriadSetPro-Thin.woff') format('woff'), /* Modern Browsers */
+  url('./common/images/font/MyriadSetPro-Thin/MyriadSetPro-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('./common/images/font/MyriadSetPro-Thin/MyriadSetPro-Thin.svg') format('svg'); /* Legacy iOS */
+  font-weight:normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadSetPro-Thinltalic';
+  src: url('./common/images/font/MyriadSetPro-ThinItalic/MyriadSetPro-ThinItalic.eot'); /* IE9 Compat Modes */
+  src: url('./common/images/font/MyriadSetPro-ThinItalic/MyriadSetPro-ThinItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./common/images/font/MyriadSetPro-ThinItalic/MyriadSetPro-ThinItalic.woff') format('woff'), /* Modern Browsers */
+  url('./common/images/font/MyriadSetPro-ThinItalic/MyriadSetPro-ThinItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('./common/images/font/MyriadSetPro-ThinItalic/MyriadSetPro-ThinItalic.svg') format('svg'); /* Legacy iOS */
+  font-weight:normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'MyriadSetPro-Ultralight';
+  src: url('./common/images/font/MyriadSetPro-Ultralight/MyriadSetPro-Ultralight.eot'); /* IE9 Compat Modes */
+  src: url('./common/images/font/MyriadSetPro-Ultralight/MyriadSetPro-Ultralight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./common/images/font/MyriadSetPro-Ultralight/MyriadSetPro-Ultralight.woff') format('woff'), /* Modern Browsers */
+  url('./common/images/font/MyriadSetPro-Ultralight/MyriadSetPro-Ultralight.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('./common/images/font/MyriadSetPro-Ultralight/MyriadSetPro-Ultralight.svg') format('svg'); /* Legacy iOS */
+  font-weight:normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadSetPro-Ultralightltalic';
+  src: url('./common/images/font/MyriadSetPro-UltralightItalic/MyriadSetPro-UltralightItalic.eot'); /* IE9 Compat Modes */
+  src: url('./common/images/font/MyriadSetPro-UltralightItalic/MyriadSetPro-UltralightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./common/images/font/MyriadSetPro-UltralightItalic/MyriadSetPro-UltralightItalic.woff') format('woff'), /* Modern Browsers */
+  url('./common/images/font/MyriadSetPro-UltralightItalic/MyriadSetPro-UltralightItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('./common/images/font/MyriadSetPro-UltralightItalic/MyriadSetPro-UltralightItalic.svg') format('svg'); /* Legacy iOS */
+  font-weight:normal;
+  font-style: normal;
+}
+
+
+html, body, a, button, input, select, textarea
+  font: 12px/1.5 'MyriadSetPro-Thin','MyriadSetPro-Thinltalic','MyriadSetPro-Ultralight',',MyriadSetPro-Ultralightltalic','Microsoft Yahei', tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+  color #55595b
+body
+  width 100%
+  height 100%
+  background $body-bg
+  overflow auto
+
+audio, canvas, img, video
+  vertical-align: middle
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+  &.none, &.none:hover
+    border: 0 none
+    outline: none
+    -webkit-appearance: none
+    text-decoration: none
+input
+  outline none
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td
+  margin 0
+  padding 0
+
+table
+  border-collapse collapse
+  border-spacing 0
+
+fieldset,
+img
+  border 0
+
+/*
+  TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var
+  font-style normal
+  font-weight normal
+
+
+ol,
+ul
+  list-style none
+
+
+caption,
+th
+  text-align left
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-size 100%
+  font-weight normal
+
+q:before,
+q:after
+  content ''
+
+abbr,
+acronym
+  border 0
+  font-variant normal
+
+/* to preserve line-height and selector appearance */
+sup
+  vertical-align text-top
+
+sub
+  vertical-align text-bottom
+
+/*because legend doesn't inherit in IE */
+legend
+  color #000
+
