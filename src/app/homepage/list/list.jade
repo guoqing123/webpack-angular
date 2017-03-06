@@ -1,2 +1,7 @@
 .home-page
-  div
+  input(ng-model = "fil")
+  .list
+    ul
+      li(ng-repeat = "item in vm.items | filter:fil")
+        span(ng-bind = "item.name")
+        span {{'asd '| capitalize}}

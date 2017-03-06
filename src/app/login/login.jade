@@ -1,0 +1,40 @@
+
+.login-box
+  .login-box-container
+    .login-content
+      .login-box-top
+        .logo-start Start your
+        .login-svg
+      .box-main
+        form.form(name='vm.loginForm')
+          .inputBox
+            input.input.err(placeholder="Email")
+            i.iconFont.icon-email
+            //错误提示
+            .errorBox.error
+              div
+                span Please enter the correct user name
+          .inputBox
+            input.input(placeholder="Password")
+            i.iconFont.icon-password1
+            //错误提示
+            .errorBox.error
+              div
+                span Please enter the correct password
+
+          .logBtns(ng-click='login()' ng-class='{"gray":loadShow == 2}' ui-sref='homePageList')
+            span(ng-show='loadShow == 1') SING IN
+            .loader(ng-show='loadShow == 2')
+              span.word LOG IN
+              .loader-inner.ball-pulse
+                .div
+                .div
+                .div
+          .btnList
+            .labels.left
+              i.iconFont.icon-uncheckbox
+              span Remember me
+            a.right.cp(ui-sref="flogetpassword") Forgot password&nbsp;?
+
+
+    .copyright Copyright © 2017 AddNewer Incorporated. All rights reserved

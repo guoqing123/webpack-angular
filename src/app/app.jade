@@ -4,5 +4,5 @@
     .header-menu
       ul
         li(ng-repeat = "item in vm.menu" ng-class = "{'active': vm.menuClick($index)}")
-          span(ng-bind = "item.name" ui-sref="{{this.menu.href}}")
+          span(ng-bind = "item.name")
 .content(ui-view = "")

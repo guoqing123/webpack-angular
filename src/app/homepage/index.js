@@ -18,10 +18,15 @@ export default angular.module('homePage',[])
             }).state('homePageList',{
                 parent: 'homePage',
                 url: '/homePageList',
-                template: homePageListComp,
-                controller: homePageListCtrl,
-                controllerAs: 'vm'
-                //component:'homePageList'
+                //template: homePageListComp,
+                //controller: homePageListCtrl,
+                //controllerAs: 'vm',
+                component:'homePageList'
             })
+    })
+    .component('homePageList',{
+        template: homePageListComp,
+        controller: homePageListCtrl,
+        controllerAs: 'vm',
     })
     .name

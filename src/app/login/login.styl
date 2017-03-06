@@ -1,0 +1,240 @@
+@require "../common/css/global"
+@require "../common/css/comm"
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  45% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  45% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.login-box
+  position relative
+  width 100%
+  height 100vh
+  display table
+  background -moz-linear-gradient(top,$fff,#e7e6e8)/*Mozilla*/
+  background -webkit-gradient(linear,0 50%,100% 50%,from($fff),to(#e7e6e8))/*Old gradient for webkit*/
+  background -webkit-linear-gradient(top,$fff,#e7e6e8)/*new gradient for Webkit*/
+  background -o-linear-gradient(top,$fff,#e7e6e8) /*Opera11*/
+.login-box-container
+  display table-cell
+  width 100%
+  //height calc(100vh - 50px)
+  //height 100vh
+  vertical-align top
+  .login-content
+    padding-top 10%
+    margin 0 auto
+    width 320px
+    .login-box-top
+      position relative
+      height 60px
+      width 100%
+
+      .logo-start
+        position absolute
+        top -38px
+        left -30px
+        font-size 25px
+        color #7f8184
+      .login-svg
+        box-sizing border-box
+        width 320px
+        height 60px
+        line-height 60px
+        float left
+        display inline-block
+        text-align center
+        background url(./images/os-logo-b.svg) center center no-repeat
+        background-size 100%
+    .box-top
+      width 280px
+      margin 0 auto
+      text-align center
+      h1
+        font-size 42px
+        color #7f8184
+
+.box-main
+  .form
+    width 260px
+    height auto
+    margin 0 auto
+    margin-top 34px
+    .inputBox
+      width 260px
+      min-height 40px
+      line-height 40px
+      position relative
+      margin-top 15px
+      input
+        width 260px
+        height 40px
+        font-size 14px
+        line-height 40px
+        padding 0 10px 0 40px
+      input:-moz-placeholder
+        color #d9d9d9
+      input::-moz-placeholder
+        color #d9d9d9
+      input:-ms-input-placeholder
+        color #d9d9d9
+      input::-webkit-input-placeholder
+        color #d9d9d9
+
+      .errorBox
+        padding-left 0
+      i.icon-email,
+      i.icon-password1
+        position absolute
+        left 10px
+        top 0
+        font-size 22px
+        color #c3c3c3
+.box-main
+  .btnList
+    height 20px
+    line-height 20px
+    a,
+    .labels
+      font-size 14px
+      color #7f8184
+      span,
+      .icon-uncheckbox
+        vertical-align top
+    a:hover
+      text-decoration underline
+      color $main-color
+    .a-cancel
+      display inline-block
+      width 100%
+      text-align center
+
+.logBtns
+  margin-top 20px
+  margin-bottom 20px
+  min-width 260px
+  height 40px
+  line-height 40px
+  font-size 14px
+  text-align center
+  background #279ed4
+  color #fff
+  display inline-block
+  cursor pointer
+  padding 0 15px
+  box-sizing border-box
+  &:hover
+    background #1574ab
+  &.gray
+    background #d6d6d6
+    &.hover
+      background #cacaca
+.logBtns.gray
+  .loader
+    box-sizing border-box
+    display inline-block
+    text-align center
+    max-width 100%
+    height 40px
+    line-height 40px
+    .word
+      color #fff
+      display inline-block
+      padding-right 15px
+      vertical-align middle
+    .ball-pulse
+      display inline-block
+    .ball-pulse > div:nth-child(0)
+      -webkit-animation scale 0.75s 0s infinite cubic-bezier(.2, .68, .18, 1.08)
+      animation scale 0.75s 0s infinite cubic-bezier(.2, .68, .18, 1.08)
+    .ball-pulse > div:nth-child(1)
+      -webkit-animation scale 0.75s 0.12s infinite cubic-bezier(.2, .68, .18, 1.08)
+      animation scale 0.75s 0.12s infinite cubic-bezier(.2, .68, .18, 1.08)
+    .ball-pulse > div:nth-child(2)
+      -webkit-animation scale 0.75s 0.24s infinite cubic-bezier(.2, .68, .18, 1.08);
+      animation scale 0.75s 0.24s infinite cubic-bezier(.2, .68, .18, 1.08)
+    .ball-pulse > div:nth-child(3)
+      -webkit-animation scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08)
+      animation: scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08)
+    .ball-pulse > div
+      background-color $fff
+      width 12px
+      height 12px
+      border-radius 100%
+      margin 2px
+      -webkit-animation-fill-mode both
+      animation-fill-mode both
+      display inline-block
+      vertical-align middle
+
+.box-main.sucess-main
+  .form
+    width 100%
+  .success
+    margin-top 30px
+    width 100%
+    height 64px
+    .su-cil
+      margin 0 auto
+      height 64px
+      width 64px
+      text-align center
+      line-hieght 64px
+      border 1px solid #47c00a
+      x-border-radius(50%)
+      .icon-checkbox
+        font-size 40px
+        color #47c00a
+  .tipt-cont
+    margin-top 16px
+    width 100%
+    text-align center
+    font-size 20px
+    color #7f8184
+  .complete
+    margin-top 50px
+    width 100%
+    text-align center
+    font-size 14px
+    a
+      color $main-color
+
+
+.copyright
+  position absolute
+  bottom 0
+  height 48px
+  width 100%
+  line-height 48px
+  text-align center
+  color #b5b5b5
+  border-top 1px solid rgba(0, 0, 0, .04)
+  background url(./images/ReachMax.svg) 59% center no-repeat

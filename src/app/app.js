@@ -4,7 +4,9 @@ import './app.styl'
 import 'angular';
 import 'angular-ui-router';
 
-
+import comm from './common'
+import filter from './filter'
+import login from './login'
 import homePage from './homepage'
 
 
@@ -12,7 +14,7 @@ import  appConfig from './app.config.js';
 //import  httpProviders from './app.httpProviders.js'
 
 
-const appModule = ['ui.router',homePage];
+const appModule = ['ui.router',comm,filter,login,homePage];
 export default angular.module('app',appModule)
     .config(appConfig)
     //.config(httpProviders)

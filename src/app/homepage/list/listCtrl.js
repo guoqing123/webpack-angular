@@ -6,5 +6,26 @@ export default class HomePageListCtrl{
     constructor($http){
         'ngInject';
         Object.assign(this,{$http});
+
+        this.items = [
+            {
+                name: 'Ari'
+            },
+            {
+                name: 'Lerner'
+            },
+            {
+                name: 'Likes'
+            },
+            {
+                name: 'To'
+            },
+            {
+                name: 'Eat'
+            },
+            {
+                name: 'Pizza'
+            },
+        ]
     }
 }
