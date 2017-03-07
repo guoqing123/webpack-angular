@@ -6,14 +6,20 @@
         .logo-start Start your
         .login-svg
       .box-main
-        form.form(name='vm.loginForm')
+        form.form(name='loginForm' ng-submit="signUpForm()")
           .inputBox
-            input.input.err(placeholder="Email")
+            input.input.err(placeholder="Email" name="userName" ng-model="signUp.name" ng-minlength="3" ng-maxlength="10" required ng-focus)
             i.iconFont.icon-email
             //错误提示
-            .errorBox.error
-              div
-                span Please enter the correct user name
+            .errorBox.error(ng-show="loginForm.userName.$dirty&&loginForm.userName.$invalid && !loginForm.userName.$focused")
+              div(ng-show="loginForm.userName.$error.required")
+                span Your name is required.
+              div(ng-show="loginForm.userName.$error.minlength")
+                span Your name is required to be at least 3 characters.
+              div(ng-show="loginForm.userName.$error.maxlength")
+                span Your name cannot be longer than 20 characters.
+              div(ng-show="false")
+                span Please enter the correct user name.
           .inputBox
             input.input(placeholder="Password")
             i.iconFont.icon-password1
