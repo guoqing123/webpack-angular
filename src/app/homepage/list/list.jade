@@ -1,7 +1,2 @@
 .home-page
-  input(ng-model = "fil")
-  .list
-    ul
-      li(ng-repeat = "item in vm.items | filter:fil")
-        span(ng-bind = "item.name")
-        span {{'asd '| capitalize}}
+  drop-down(options-info = 'vm.data' default-text = '请选择' item-name="name" call-back = 'vm.itemSelect(value,$index)')
