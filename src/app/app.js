@@ -3,6 +3,7 @@
 import './app.styl'
 import 'angular';
 import 'angular-ui-router';
+import  'ng-infinite-scroll'
 
 import comm from './common'
 import directive from './directive'
@@ -15,7 +16,7 @@ import  appConfig from './app.config.js';
 //import  httpProviders from './app.httpProviders.js'
 
 
-const appModule = ['ui.router',comm,directive,filter,login,homePage];
+const appModule = ['ui.router','infinite-scroll',comm,directive,filter,login,homePage];
 export default angular.module('app',appModule)
     .config(appConfig)
     //.config(httpProviders)
