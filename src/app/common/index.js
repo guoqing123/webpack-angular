@@ -3,8 +3,9 @@
  */
 import commonConfig from  './config/ui.router.component';
 import DropDown from './dropdown/index'
+import Datepicker from './Datepicker/index'
 
 export default angular.module('common',[
-    commonConfig,DropDown
+    commonConfig,DropDown,Datepicker
 ])
     .name
